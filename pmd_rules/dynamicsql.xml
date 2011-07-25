@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<ruleset name="Dynamic SQL Ruleset">
+  <description>
+This ruleset contains a collection of rules that find instances of potentially 
+exploitable dynamic SQL.
+  </description>
+
+  <rule name="DynamicSqlSelectStmts"
+        message="'' {0} ''"
+        class="net.sourceforge.pmd.rules.web.security.DynSqlSelectStmts">
+    <description>
+Dynamic SQL or "string building" techniques that rely on unsanitized input values 
+are potentially vulnerable to SQL Injection.
+    </description>
+      <priority>1</priority>
+    <example>
+<![CDATA[
+
+int id = request.getParameter("id");
+
+String sql = "select * from employees where employeeid = " + id;
+
+]]>
+    </example>
+  </rule>
+
+<!-- MORE RULES -->
+
+</ruleset>

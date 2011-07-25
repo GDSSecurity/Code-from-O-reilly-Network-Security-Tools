@@ -1,0 +1,15 @@
+This repository includes some of the tools developed for the book Network Security Tools, Writing, Hacking, and Modifying Security Tools, published April 2005 by O'Reilly (ISBN 0-596-00794-9). These examples, along with the rest of the examples from the book, are also available from O'Reilly.
+
+This software is released under the Reciprocal Public License 1.5 (RPL1.5) http://www.opensource.org/licenses/rpl1.5
+
+PMD SQL Injection Rules (pmd_rules)
+-----------------------------------
+
+PMD is a static source analysis tool for analyzing Java source code. In Chapter 6 of Network Security Tools, Joe Hemler discussed how to write rules for PMD that could be used to detect SQL Injection vulnerabilities.
+
+
+Simple & Extended Scanner (scanners)
+------------------------------------
+
+In Chapters 8 and 9 of Network Security Tools, Brian Holyfield explores the design and implementation of a simple web application scanning (Chapter 8) and exploitation (Chapter 9) engine in Perl. Chapter 8 is the sample chapter for this book, and is available online from O'Reilly.
+
